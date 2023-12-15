@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="90dp"
+        android:text="이름"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email_textView"
+        app:layout_constraintEnd_toStartOf="@+id/nameET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:hint="8자 이하"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/emailET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nametextView" />
+
+    <TextView
+        android:id="@+id/email_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="70dp"
+        android:text="E-Mail"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_textView"
+        app:layout_constraintEnd_toStartOf="@+id/emailET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextView" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="'@' 포함"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email_textView" />
+
+    <TextView
+        android:id="@+id/id_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="67dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/okBT"
+        app:layout_constraintEnd_toStartOf="@+id/IDET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_textView" />
+
+    <EditText
+        android:id="@+id/IDET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:hint="6-12 자"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_textView"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+    <Button
+        android:id="@+id/okBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="236dp"
+        android:text="찾기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelBT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textView" />
+
+    <Button
+        android:id="@+id/cancelBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="111dp"
+        android:text="cancle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/okBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/okBT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

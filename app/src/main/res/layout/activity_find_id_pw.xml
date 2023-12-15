@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindIdPw">
+
+    <Button
+        android:id="@+id/find_id"
+        style="@style/defaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="624dp"
+        android:text="id 찾기"
+        app:layout_constraintBottom_toTopOf="@+id/Frame_Layout_idpw"
+        app:layout_constraintEnd_toStartOf="@+id/find_pw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/find_pw"
+        style="@style/defaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:text="pw 찾기"
+        app:layout_constraintBaseline_toBaselineOf="@+id/find_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/find_id" />
+
+    <FrameLayout
+        android:id="@+id/Frame_Layout_idpw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DoneRunning</string>
+
+    <string name="title">Title</string>
+
+    <string name="set_number">세트 수</string>
+
+    <string name="rest_time">휴식 시간</string>
+
+    <string name="act_time">운동 시간</string>
+
+    <string name="start">Start</string>
+
+    <string name="remain_act_time">남은 운동 시간</string>
+
+    <string name="finish">Finish</string>
+
+    <string name="remain_rest_time">남은 휴식 시간</string>
+
+    <string name="title_rest_time">Rest Time</string>
+
+    <string name="title_active_time">Active Time</string>
+
+    <string name="date">날짜</string>
+
+    <string name="distance">거리</string>
+
+    <string name="calorie">칼로리</string>
+
+    <string name="speed">속도</string>
+
+    <string name="running_detail">Running Detail</string>
+
+    <string name="tabata_detail">Tabata Detail</string>
+</resources>
